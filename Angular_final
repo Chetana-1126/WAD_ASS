@@ -1,0 +1,45 @@
+!-------app.html--------!
+<h1>{{title}}</h1>
+
+<input type="text" #name placeholder="Enter your name" name="Name"><br>
+<input type="text" #address placeholder="Enter your address" address = "Address"><br>
+<input type="text" #contact placeholder="Enter your contact" contact = "Contact"><br>
+<input type="text" #email placeholder="Enter your email" email = "Email"><br>
+<input type="password" #password placeholder="Enter the password" password = "Password">
+
+<button (click) = "getValue(name.value , address.value , contact.value , email.value)">Register</button>
+
+<h2>Your registered data</h2>
+
+<p>Name : {{displayName}}</p>
+<p>Address : {{displayAddress}}</p>
+<p>Contact : {{displayContact}}</p>
+<p>Email : {{displayEmail}}</p>
+
+
+
+!-------------app.ts------------!
+import { Component, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
+})
+export class App {
+  title = "Registration Form";
+
+  displayName = '';
+  displayAddress = '';
+  displayContact = '';
+  displayEmail = '';
+
+  getValue(name:string , address:string , contact:string , email:string ){
+    this.displayName = name;
+    this.displayAddress = address;
+    this.displayContact = contact;
+    this.displayEmail = email;
+  }
+}
