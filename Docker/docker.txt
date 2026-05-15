@@ -1,0 +1,17 @@
+Wad => chetana => server.js => Dockerfile
+
+server.js => console.log("hello world");
+
+Dockerfile => 
+
+FROM node:alpine
+
+COPY . /chetana
+
+CMD ["node", "/chetana/server.js"]
+
+terminal => 
+
+docker build -t chetana.
+docker images
+docker run chetana
