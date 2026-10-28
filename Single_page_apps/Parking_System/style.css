@@ -1,0 +1,77 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #222;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px gray;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#parkingArea {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.slot {
+    width: 100px;
+    padding: 15px 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.available {
+    background-color: green;
+}
+
+.occupied {
+    background-color: red;
+}
+
+#vehicleList {
+    margin-top: 10px;
+}
+
+.vehicle {
+    padding: 10px;
+    margin: 8px;
+    background-color: #e5e7eb;
+    border-radius: 5px;
+}
+
+#parkMessage, #removeMessage {
+    font-weight: bold;
+}

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Parking Management System</h1>
+
+    <!-- Add Vehicle Section -->
+    <div class="box">
+        <h2>Park Vehicle</h2>
+
+        <input type="text" id="vehicleNumber"
+               placeholder="Enter vehicle number">
+
+        <select id="vehicleType">
+            <option value="Car">Car</option>
+            <option value="Bike">Bike</option>
+            <option value="Truck">Truck</option>
+        </select>
+
+        <button onclick="parkVehicle()">Park Vehicle</button>
+
+        <p id="parkMessage"></p>
+    </div>
+
+    <!-- Remove Vehicle Section -->
+    <div class="box">
+        <h2>Remove Vehicle</h2>
+
+        <input type="text" id="removeNumber"
+               placeholder="Enter vehicle number">
+
+        <button onclick="removeVehicle()">Remove Vehicle</button>
+
+        <p id="removeMessage"></p>
+    </div>
+
+    <!-- Parking Status -->
+    <div class="box">
+        <h2>Parking Status</h2>
+
+        <p>Total Slots: <span id="totalSlots">5</span></p>
+        <p>Available Slots: <span id="availableSlots">5</span></p>
+        <p>Occupied Slots: <span id="occupiedSlots">0</span></p>
+
+        <div id="parkingArea"></div>
+    </div>
+
+    <!-- Vehicle List -->
+    <div class="box">
+        <h2>Parked Vehicles</h2>
+        <div id="vehicleList"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

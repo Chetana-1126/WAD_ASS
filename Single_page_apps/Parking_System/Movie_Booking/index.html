@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Movie Seat Booking System</h1>
+
+    <section>
+        <h2>Book Seats</h2>
+
+        <label>Number of Seats</label>
+        <input type="number" id="seatCount" placeholder="Enter seat count">
+
+        <button id="bookBtn">Book Seats</button>
+        <p id="bookMessage"></p>
+    </section>
+
+    <section>
+        <h2>Cancel Booking</h2>
+
+        <label>Booking Number</label>
+        <input type="number" id="bookingNo" placeholder="Enter booking number">
+
+        <button id="cancelBtn">Cancel Booking</button>
+        <p id="cancelMessage"></p>
+    </section>
+
+    <section>
+        <h2>Seat Layout</h2>
+        <p>Available Seats: <span id="freeSeats">15</span></p>
+        <div id="seatLayout"></div>
+    </section>
+
+    <section>
+        <h2>Booking List</h2>
+        <div id="bookingList"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

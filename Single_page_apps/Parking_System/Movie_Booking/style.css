@@ -1,0 +1,44 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    text-align: center;
+    margin: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 8px;
+}
+
+button {
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.seat {
+    display: inline-block;
+    padding: 10px;
+    margin: 4px;
+    background: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.booked {
+    background: red;
+}
+
+#bookMessage, #cancelMessage {
+    font-weight: bold;
+}
